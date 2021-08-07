@@ -8,6 +8,7 @@ body{
     color: #3c4043;
     height: 100%;
     width: 100%;
+    font-family: arial, sans-serif;
 }
 a{
     line-height: 24px;
@@ -28,6 +29,7 @@ button{
 }
 .header{
     width: 100%;
+    height: 10vh;
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
@@ -61,4 +63,96 @@ button{
 .header__sign:hover{
     background-color: #2b7de9;
     box-shadow:0 1px 3px 1px rgb(66 133 244 / 15%);
+}
+.main{
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main__wrapper{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.main__wrapper-logo{
+    height: 92px;
+    max-width: 272px;
+}
+.main__searchbar{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 1px solid #dfe1e5;
+    box-shadow: none;
+    border-radius: 24px;
+    height: 44px;
+    margin: 0 auto;
+    width: 570px;
+    max-width: 584px;
+    position: relative;
+   padding: 0 10px;
+   margin: 25px 0;
+}
+.main__searchbar:hover{
+    box-shadow: 0 1px 6px rgb(32 33 36 / 28%);
+    border-color: rgba(223, 225, 229, 0);
+    ;
+}
+.main__searchbar-loupe{
+    width: 25px;
+    height:25px;
+    position: relative;
+    color: #9aa0a6;
+    left: 0;
+    top: 0;
+}
+.main__searchbar-input{
+    width: 85%;
+    height: 100%;
+    border: none;
+}
+.main__searchbar-input:focus-visible{
+    border:none;
+    outline-width: 0;
+}
+.main__searchbar-mic{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    right: 0;
+    top: 0;
+    margin-left: 8px;
+}
+.main__buttons{
+    margin: 10px 0;
+}
+.main__buttons-lookfor, .main__buttons-lucky{
+    background-color: transparent;
+    color: #3c4043;
+    border: none;
+    cursor: pointer;
+    border: 1px solid transparent;
+    margin: 11px 4px;
+    height: 36px;
+    min-width: 54px;
+}
+.main__buttons-lookfor:hover , .main__buttons-lucky:hover {
+    background-color: #f8f9fa;
+    border: 1px solid #dadce0;
+    color: #202124;
+    box-shadow: 0 1px 1px rgb(0 0 0 / 10%);
+}
+.main__language{
+    color: #3c4043;
+    line-height: 28px;
+    font-size: 14px;
+}
+.main__language a{
+    color: #1a0dab;
+    text-decoration: none;
+}
+.main__language a:hover{
+    text-decoration: underline;
 }
